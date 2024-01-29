@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="icon" type="image/x-icon" href="images\fac-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+                screens: {
+                'sm': '600px',
+                // => @media (min-width: 640px) { ... }
+
+                'md': '768px',
+                // => @media (min-width: 768px) { ... }
+
+                'lg': '950px',
+                // => @media (min-width: 1024px) { ... }
+
+                'xl': '1280px',
+                // => @media (min-width: 1280px) { ... }
+
+                '2xl': '1536px',
+                // => @media (min-width: 1536px) { ... }
+                },
+           extend: {
+                 screens : {
+                    'x' : { 'max': '640px'}
+                 }
+                }
+          }
+        }
+      </script>
+</head>
+<body class="box-border">
+    <!-- start - banner section -->
+    <section class="w-[100%] h-[100vh] bg-[url('images/Banner.jpg')] bg-cover bg-center">
+        <div class="w-[100%] h-[100vh] bg-[rgba(0,0,0,0.7)]">
+            <div class="max-w-[1170px] mx-auto">
+                <header class="flex items-center justify-between">
+                    <figure>
+                        <img src="images/Netflix-Logo.wine.svg" alt="" class="lg:w-[180px] w-[100px]">
+                    </figure>
+                    <div class="relative">
+                        <svg width="16" height="16" class="text-white  absolute left-[10px] top-[10px]" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
+                        <select class="bg-transparent font-bold text-[white] border-[1px] p-[5px_30px] rounded-md mr-[10px]">
+                            <option value="" class="text-[black] sr-only">English</option>
+                            <option value="" class="text-[black] sr-only">Hindi</option>
+                        </select>
+                        <button class="bg-[red] font-bold text-[white] p-[5px_15px] rounded-md mx-[10px] hover:bg-[rgb(193,17,25)]">
+                            Sign In
+                        </button>
+                    </div>
+                </header>
+                <div class="w-[100%] text-white text-center sm:px-[75px] px-[40px] sm:mt-[130px] mt-[60px]">
+                    <h1 class="sm:text-[50px] text-[30px] font-bold">The biggest Indian hits. The best Indian stories. All streaming here.</h1>
+                    <h4 class="sm:text-[25px] text-[18px] mt-[10px]">
+                        Watch anywhere. Cancel anytime.
+                    </h4>
+                    <h4 class="sm:text-[25px] text-[18px] mt-[15px]">
+                        Ready to watch? Enter your email to create or restart your membership.
+                    </h4>
+                    <div class="sm:w-[70%] w-[100%] mx-auto  h-[60px] mt-[20px]">
+                        <form action="" class="grid sm:grid-cols-[70%_auto] grid-cols-1 gap-[10px]">
+                            <input type="text" name="" id="" placeholder="Email Address" class="sm:h-[60px] h-[50px] pl-[30px] text-[18px] font-semibold bg-[rgba(0,0,0,0.5)] border-[1px] rounded-md">
+                            <button class="sm:h-[60px] h-[50px]  bg-[red] font-bold text-[white] p-[5px_15px] rounded-md
+                            sm:text-[25px] text-[20px] mx-auto sm:m-[0px] hover:bg-[rgb(193,17,25)]">
+                                Get Started
+                                <i class="fas fa-solid fa-circle-arrow-right text-[25px] text-[white]"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end - banner section -->
+    <!-- start - tv section -->
+    <section class="w-[100%] border-t-[8px] border-[rgb(35,35,35)] bg-[black]">
+        <div class="max-w-[1170px] mx-auto grid sm:grid-cols-2 grid-cols-1 sm:py-[70px] py-[50px]  items-center ">
+            <div class="text-[white] sm:text-left text-center px-[10px]">
+                <h1 class="sm:text-[55px] text-[30px] font-extrabold">Enjoy on your TV</h1>
+                <h4 class="sm:text-[30px] text-[18px] mt-[10px]">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h4>
+            </div>
+            <figure class="p-[20px] relative">
+                <img src="images\tv.png" class="relative z-[2]">
+                <video src="images/video-tv-in-0819.m4v" class="absolute top-[23.5%] left-[15.5%] w-[68%] z-[1]"></video>
+            </figure>
+        </div>
+    </section>
+    <!-- end - tv section -->
+    <!-- start - download section -->
+    <section class="w-[100%] border-t-[8px] border-[rgb(35,35,35)] bg-[black] ">
+        <div class="max-w-[1170px] mx-auto grid sm:grid-cols-2 grid-cols-1 sm:py-[70px] py-[50px]  items-center gap-[50px]">
+            <figure class="relative">
+                <img src="images/mobile.jpg" alt="">
+                <div class="flex items-center justify-between w-[55%] p-[10px] bg-[black] border-[1px] rounded-lg absolute bottom-[7%] right-[23%]">
+                    <div class="flex items-center">
+                        <img src="images/boxshot.png" class="w-[22%]" srcset="">
+                        <div class="ml-[10px]" >
+                            <h4 class="text-white sm:text-[18px] text-[10px] font-bold">Stranger Things</h4>
+                            <p class="sm:text-[15px] text-[10px] text-blue-500">Downloading...</p>
+                        </div>
+                    </div>
+                    <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif" class="w-[20%]">
+                </div>
+            </figure>
+            <div class="text-[white] sm:text-left text-center sm:p-[0px] pr-[10px]">
+                <h1 class="sm:text-[50px] text-[30px] sm:leading-[55px] leading-[35px] font-extrabold">Download your shows to watch offline</h1>
+                <h4 class="sm:text-[30px] text-[18px] mt-[10px]">Save your favourites easily and always have something to watch.</h4>
+            </div>
+        </div>
+    </section>
+    <!-- end - download section -->
+    <!-- start - watch section-->
+    <section class="w-[100%] border-t-[8px] border-[rgb(35,35,35)] bg-[black]">
+        <div class="max-w-[1170px] mx-auto grid sm:grid-cols-2 grid-cols-1 sm:py-[70px] py-[50px]  items-center gap-[30px]">
+            <div class="text-[white] sm:text-left text-center px-[10px]">
+                <h1 class="sm:text-[55px] text-[30px] font-extrabold">Watch everywhere</h1>
+                <h4 class="sm:text-[30px] text-[18px] mt-[10px]">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h4>
+            </div>
+            <figure class="p-[20px] relative">
+                <img src="images\pc.png" class="relative z-[2]">
+                <video src="images\video-devices-in.m4v" class="absolute top-[12%] left-[18.5%] w-[61%] z-[1]"></video>
+            </figure>
+        </div>
+    </section>
+    <!-- end - watch section -->
+    <!-- start - children section -->
+    <section class="w-[100%] border-t-[8px] border-[rgb(35,35,35)] bg-[black] ">
+        <div class="max-w-[1170px] mx-auto grid sm:grid-cols-2 grid-cols-1 sm:py-[70px] py-[50px]  items-center gap-[50px]">
+            <figure class="relative">
+                <img src="images/children.png" alt="">
+            </figure>
+            <div class="text-[white] sm:text-left text-center sm:p-[0px] pr-[10px]">
+                <h1 class="sm:text-[50px] text-[30px] sm:leading-[55px] leading-[35px] font-extrabold">Create profiles for kids</h1>
+                <h4 class="sm:text-[30px] text-[18px] sm:leading-[35px] leading-[23px] mt-[10px]">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h4>
+            </div>
+        </div>
+    </section>
+    <!-- end - children section -->
+</body>
+</html>
